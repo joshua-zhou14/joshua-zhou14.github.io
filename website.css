@@ -8,9 +8,32 @@ img {
 body {
   background-color: rgb(220,240,192);
 }
+
+/* Title container */
+.title-container {
+  height: 100px;
+  position: relative;
+  margin: auto;
+}
+
 /* Slideshow container */
 .slideshow {
-  max-width: 700px;
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Dot container */
+.dot-container {
+  height: 50px;
+  position: relative;
+  margin: auto;
+}
+
+/* Index Body container */
+.indexbody {
+  max-width: 1000px;
+  height: 200 px;
   position: relative;
   margin: auto;
 }
@@ -30,6 +53,13 @@ body {
   bottom: 8px;
   width: 100%;
   text-align: center;
+}
+
+/* Normal text */
+.regtext {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  /*width: 100%;*/
 }
 
 /* Next & previous buttons */
@@ -78,7 +108,7 @@ body {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @keyframes fade {
