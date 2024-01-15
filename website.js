@@ -1,5 +1,5 @@
-let slideIndex = 0;
-showSlides();
+let slideIndex = 1;
+showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -27,9 +27,9 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-function showSlides() {
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    showSlides(slideIndex);
-    setTimeout(showSlides, 3000); // Change image every 2 seconds
-  }
+// function showSlides() {
+//     slideIndex++;
+//     if (slideIndex > slides.length) {slideIndex = 1}
+//     showSlides(slideIndex);
+//     setTimeout(showSlides, 3000); // Change image every 2 seconds
+//   }
