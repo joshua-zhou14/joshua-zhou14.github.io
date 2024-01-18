@@ -14,23 +14,24 @@ body {
 }
 
 /* Title container */
-.title-container {
-  height: 125px;
+/* .title-container {
+  height: 75px;
   position: relative;
   margin: 0;
-  background-color: black; /*just black */
-}
+  background-color: black; /*just black 
+} */
 
 .spacing{
-  height: 50px;
+  height: 3px;
 }
 
 /* Slideshow container */
 .slideshow {
-  max-width: 900px;
+  /* max-width: 900px; */
+  width: 100%;
   position: relative;
   margin: auto;
-  border: 10px solid #363636;
+  /* border: 10px solid #363636; */
   /*black: #363636*/
 }
 
@@ -103,22 +104,6 @@ body {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* The dots/bullets/indicators */
-/* .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-} */
-
-/* .active, .dot:hover {
-  background-color: #717171;
-} */
-
 /* Fading animation */
 .fade {
   animation-name: fade;
@@ -133,4 +118,56 @@ body {
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+header {
+  background-color: black;
+  padding: 10px;
+  padding-left: 30px;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-button {
+  background-color: #555;
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright{
+  color: white; 
+  text-align:center;
+  font-size: 13px;
 }
