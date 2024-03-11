@@ -5,9 +5,12 @@ import rtha from "../images/rtha2.jpg";
 import sasp from "../images/sasp2.jpg";
 import yewa from "../images/yewa2.jpg";
 import {useState} from "react";
+import CopyRight from "./CopyRight";
+import CarouselCaption from 'react-bootstrap/esm/CarouselCaption';
 
 function Home(){
     const arr = [btsp, rtha, sasp, yewa];
+    // const names = ["Black-throated Sparrow (Amphispiza bilineata)", "Red-tailed Hawk (Buteo jamaicensis)", "Savannah Sparrow (Passerculus sandwichensis)", "Yellow Warbler (Setophaga petechia)"];
     const [curr, setIndex] = useState(0);
 
     const handleSelect = (selectedIndex) => {
@@ -15,13 +18,15 @@ function Home(){
     };
 
     return (
-        <Carousel activeIndex={curr} onSelect={handleSelect}>
-        {arr.map((item, index) => <Carousel.Item key={item}>
-            <img className = "d-block w-100" src={item} style={{height:475, width:"100%", objectFit: 'cover'}}/>
-            <Carousel.Caption>
-            </Carousel.Caption>
-        </Carousel.Item>)}
-        </Carousel>
+        <>
+            <Carousel activeIndex={curr} onSelect={handleSelect}>
+            {arr.map((item, index) => <Carousel.Item key={item}>
+                <img className = "d-block w-100" src={item} style={{height:475, width:"100%", objectFit: 'cover'}}/>
+            {/* <CarouselCaption>{names[curr]}</CarouselCaption> */}
+            </Carousel.Item>)}
+            </Carousel>
+            <CopyRight />
+        </>
     );
 }
 
