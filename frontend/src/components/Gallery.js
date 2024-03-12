@@ -6,6 +6,7 @@ function Gallery(){
     // Pagination, Rows and Cols (how to make smart?) for gallery itself
     // Divide birds into: Waterbirds, Songbirds, Raptors, Other 
     //Later: implement search feature
+    // postgre listens on port 9000?
 }
 
 export default Gallery;

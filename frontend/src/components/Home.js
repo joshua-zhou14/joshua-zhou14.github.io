@@ -16,12 +16,12 @@ function Home(){
     const handleSelect = (selectedIndex) => {
         setIndex(selectedIndex);
     };
-
+    // TODO: make scalable to smaller screens
     return (
         <>
             <Carousel activeIndex={curr} onSelect={handleSelect}>
             {arr.map((item, index) => <Carousel.Item key={item}>
-                <img className = "d-block w-100" src={item} style={{height:475, width:"100%", objectFit: 'cover'}}/>
+                <img className = "d-block w-100" src={item} style={{maxHeight:475, minHeight: 350, maxWidth:"100%", objectFit: 'cover'}}/>
             {/* <CarouselCaption>{names[curr]}</CarouselCaption> */}
             </Carousel.Item>)}
             </Carousel>
