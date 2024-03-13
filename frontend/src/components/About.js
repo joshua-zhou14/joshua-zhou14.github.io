@@ -12,7 +12,8 @@ function About() {
         <>
             <Container style={{marginTop:20, marginBottom:15}} fluid>
             <Row>
-                <Col xs={12} md={5} style={{marginBottom:10}}>
+                <Col xs={12} md={5} style={{marginBottom:30}}>
+                    <br></br>
                     <h5 style={{textAlign: "center"}}>About Me</h5>
                     <br></br>
                     <p style={{fontSize:13, marginLeft:15}}>Hi! My name is Joshua Zhou, an amateur wildlife photographer based in Texas. </p>
@@ -31,7 +32,7 @@ function About() {
                         <Col xs={4}/>
                     </Row>
                 </Col>
-                <Col xs={12} md={7} mx-auto d-block style={{marginTop:20}}>
+                <Col xs={12} md={7} mx-auto d-block>
                 <Image src={pfp} rounded fluid shadow-lg style={{maxHeight:425, width:"100%", objectFit: 'cover', marginBottom: 15}} />
                 </Col>
             </Row>

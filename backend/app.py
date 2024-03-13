@@ -1,16 +1,18 @@
 from flask import Flask, request
 from flask_sqlalchemy import SQLAlchemy
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:ktjz3824@localhost:5432/pictures'
 db = SQLAlchemy(app)
+CORS(app)
 
 app.app_context().push()
 
 class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String, nullable=False)
-    url = db.Column(db.String, nullable=False)
+    url = db.Column(db.LargeBinary, nullable=False)
     type = db.Column(db.Integer)
 
     def __repr__(self):
